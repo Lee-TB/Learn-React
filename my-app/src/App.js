@@ -1,6 +1,10 @@
-import React from "react";
-import Game from "./components/Game";
+import React, { useState } from "react";
+import UseState from "./hooks/useState";
 
 export default function App() {
-    return <div></div>;
+    return (
+        <>
+            <UseState />
+        </>
+    );
 }
