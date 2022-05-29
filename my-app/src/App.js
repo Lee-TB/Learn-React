@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import UseState from "./hooks/useState";
 import UseEffect from "./hooks/useEffect";
+import UseMemo from "./hooks/useMemo";
 
 export default function App() {
     const [show, setShow] = useState(false);
@@ -13,11 +14,12 @@ export default function App() {
                     setShow(!show);
                 }}
             >
-                show UseEffect
+                show UseMemo
             </button>
             <hr />
             {/* <UseState /> */}
-            {show && <UseEffect />}
+            {/* {show && <UseEffect />} */}
+            {show && <UseMemo />}
         </>
     );
 }
